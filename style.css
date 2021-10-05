@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 article {
     display: flex;
     flex-direction: column;
@@ -11,3 +12,16 @@ article {
     display: none;
 }
 
+=======
+article {
+    display: flex;
+    flex-direction: column;
+}
+/* 
+.question{
+    display: none;
+} */
+
+
+
+>>>>>>> 4ee6296d1028cdfeda56e3dc68df833949f48f95
