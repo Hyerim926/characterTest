@@ -62,17 +62,20 @@
             "ENFP" : {"animal" : "LACHICA", "explain" : "LACHICA 설명", "img" : "ygx.jpg"},
             "ENTJ" : {"animal" : "WANT", "explain" : "WANT 설명", "img" : "ygx.jpg"}
         }
+        // 테스트 시작하기를 누르면 start 클래스는 hide()하고, question 클래스는 show() 적용됨
         function start() {
             $(".start").hide();
             $(".question").show();
             next();
         }
+        // id가 A인 항목을 클릭하면 값이 1씩 증가하면서
         $("#A").click(function () {
             var type = $("#type").val();
             var preValue = $("#" + type).val();
             $("#" + type).val(parseInt(preValue) + 1);
             next();
         });
+        // B를 클릭하면 값 증가 없이 그냥 창이 넘어감
         $("#B").click(function(){
             next();
         });
