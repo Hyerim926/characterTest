@@ -1,87 +1,87 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body class="container">
     <article class="start">
-        <h1 class="mt-5 text-center">나랑 꼭 닮은 세렝게티 동물은?</h1>
-        <button type="button" class="btn btn-dark mt-5" onclick="start();">테스트 시작하기</button>
+        <h1 class="mt-5 text-center">나와 어울리는 스우파 크루는?</h1> <br>
+        <button type="button" class="btn btn-outline-light" onclick='start();'>START</button>
     </article>
     <article class="question">
         <div class="progress mt-5">
-            <div class="progress-bar" role="progressbar" style="width:calc(100/12*1%)"></div>
+            <div class="progress-bar" role="progressbar" style="width: calc(100/12*1%)"></div>
         </div>
-        <h2 id="title" class="text-center mt-5">문제</h2>
+        <h2 id="title" class="text-center mt-5">문제</h2> <br>
         <input id="type" type="hidden" value="EI">
-        <button id="A" type="button" class="btn btn-secondary mt-5">Primary</button>
-        <button id="B" type="button" class="btn btn-secondary mt-5">Primary</button>
+        <button id="A" type="button" class="btn btn-outline-light">Primary</button> <br>
+        <button id="B" type="button" class="btn btn-outline-light">Primary</button>
     </article>
     <article class="result">
-        <img class="rounded-circle mt-5" id="img" src="images/ygx.jpg" alt="ygx">
-        <h2 id="animal" class="text-center mt-5">동물 이름</h2>
+        <img id="img" class="rounded-circle mt-5" src="lion.jpg" alt="animal">
+        <h2 id="crew" class="text-center mt-5">크루이름</h2>
         <h3 id="explain" class="text-center mt-5">설명</h3>
     </article>
     <input type="hidden" id="EI" value="0">
     <input type="hidden" id="SN" value="0">
     <input type="hidden" id="TF" value="0">
     <input type="hidden" id="JP" value="0">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script>
         var num = 1;
         var q = {
-            1: {"title":"문제 1번" , "type":"EI", "A":"E","B":"I"},
-            2: {"title":"문제 2번" , "type":"EI", "A":"E","B":"I"},
-            3: {"title":"문제 3번" , "type":"EI", "A":"E","B":"I"},
-            4: {"title":"문제 4번" , "type":"SN", "A":"S","B":"N"},
-            5: {"title":"문제 5번" , "type":"SN", "A":"S","B":"N"},
-            6: {"title":"문제 6번" , "type":"SN", "A":"S","B":"N"},
-            7: {"title":"문제 7번" , "type":"TF", "A":"T","B":"F"},
-            8: {"title":"문제 8번" , "type":"TF", "A":"T","B":"F"},
-            9: {"title":"문제 9번" , "type":"TF", "A":"T","B":"F"},
-            10: {"title":"문제 10번" , "type":"JP", "A":"J","B":"P"},
-            11: {"title":"문제 11번" , "type":"JP", "A":"J","B":"P"},
-            12: {"title":"문제 12번" , "type":"JP", "A":"J","B":"P"}
+            1: {"title": "문제 1번", "type": "EI", "A": "E", "B": "I"},
+            2: {"title": "문제 2번", "type": "EI", "A": "E", "B": "I"},
+            3: {"title": "문제 3번", "type": "EI", "A": "E", "B": "I"},
+            4: {"title": "문제 4번", "type": "SN", "A": "S", "B": "N"},
+            5: {"title": "문제 5번", "type": "SN", "A": "S", "B": "N"},
+            6: {"title": "문제 6번", "type": "SN", "A": "S", "B": "N"},
+            7: {"title": "문제 7번", "type": "TF", "A": "T", "B": "F"},
+            8: {"title": "문제 8번", "type": "TF", "A": "T", "B": "F"},
+            9: {"title": "문제 9번", "type": "TF", "A": "T", "B": "F"},
+            10: {"title": "문제 10번", "type": "JP", "A": "J", "B": "P"},
+            11: {"title": "문제 11번", "type": "JP", "A": "J", "B": "P"},
+            12: {"title": "문제 12번", "type": "JP", "A": "J", "B": "P"}
         }
-
         var result = {
-            "ISTJ" : {"animal" : "YGX", "explain" : "ygx 설명", "img" : "images/ygx.jpg"},
-            "ENFP" : {"animal" : "LACHICA", "explain" : "LACHICA 설명", "img" : "ygx.jpg"},
-            "ENTJ" : {"animal" : "WANT", "explain" : "WANT 설명", "img" : "ygx.jpg"}
+            "ENTP": {"crew": "YGX", "explain": "설명", "img": "lion.jpg"},
+            "INTP": {"crew": "YGX", "explain": "부엉이 설명", "img": "lion.jpg"},
+            "ENFP": {"crew": "HOOK", "explain": "물소 설명", "img": "lion.jpg"},
+            "INFP": {"crew": "HOOK", "explain": "치타 설명", "img": "lion.jpg"},
+            "ESFJ": {"crew": "LACHICA", "explain": "나무늘보 설명", "img": "lion.jpg"},
+            "ISFJ": {"crew": "LACHICA", "explain": "거북이 설명", "img": "lion.jpg"},
+            "ESTJ": {"crew": "FROWDMAN", "explain": "코끼리 설명", "img": "lion.jpg"},
+            "ISTJ": {"crew": "FROWDMAN", "explain": "침팬지 설명", "img": "lion.jpg"},
+            "ESTP": {"crew": "COCANBUTTUR", "explain": "악어 설명", "img": "lion.jpg"},
+            "ISTP": {"crew": "COCANBUTTUR", "explain": "미어캣 설명", "img": "lion.jpg"},
+            "ENFJ": {"crew": "WANT", "explain": "멋쟁이 사자 설명", "img": "lion.jpg"},
+            "INFJ": {"crew": "WANT", "explain": "태양새 설명", "img": "lion.jpg"},
+            "INTJ": {"crew": "HOLYBANG", "explain": "기린 설명", "img": "lion.jpg"},
+            "ENTJ": {"crew": "HOLYBANG", "explain": "고릴라 설명", "img": "lion.jpg"},
+            "ESFP": {"crew": "WAYB", "explain": "카피바라 설명", "img": "lion.jpg"},
+            "ISFP": {"crew": "WAYB", "explain": "호랑이 설명", "img": "lion.jpg"}
         }
-        // 테스트 시작하기를 누르면 start 클래스는 hide()하고, question 클래스는 show() 적용됨
         function start() {
             $(".start").hide();
             $(".question").show();
             next();
         }
-        // id가 A인 항목을 클릭하면 값이 1씩 증가하면서
-        $("#A").click(function () {
+        $("#A").click(function(){
             var type = $("#type").val();
-            var preValue = $("#" + type).val();
-            $("#" + type).val(parseInt(preValue) + 1);
+            var preValue = $("#"+type).val();
+            $("#"+type).val(parseInt(preValue)+1);
             next();
         });
-        // B를 클릭하면 값 증가 없이 그냥 창이 넘어감
         $("#B").click(function(){
             next();
         });
-        function next(){
-            // 마지막 문제가 끝났을 때
-            if(num==13){
+        function next() {
+            if (num == 13) {
                 $(".question").hide();
                 $(".result").show();
                 var mbti = "";
@@ -89,21 +89,18 @@
                 ($("#SN").val() < 2) ? mbti+="N" : mbti+="S";
                 ($("#TF").val() < 2) ? mbti+="F" : mbti+="T";
                 ($("#JP").val() < 2) ? mbti+="P" : mbti+="J";
-                alert(mbti);
-                // 결과 창
-                // img 아이디 값의 속성값으로 mbti집합의 img키 값에 해당하는 value값을 가져옴
-                $("#img").attr('src', result[mbti]["img"]);
+                $("#img").attr("src",result[mbti]["img"]);
                 $("#animal").html(result[mbti]["animal"]);
                 $("#explain").html(result[mbti]["explain"]);
-            } else{
+            } else {
                 $(".progress-bar").attr('style','width: calc(100/12*'+num+'%)');
                 $("#title").html(q[num]["title"]);
                 $("#type").val(q[num]["type"]);
-                $("#A").val(q[num]["A"]);
-                $("#B").val(q[num]["B"]);
+                $("#A").html(q[num]["A"]);
+                $("#B").html(q[num]["B"]);
                 num++;
-
             }
         }
     </script>
 </body>
+</html>
