@@ -1,5 +1,46 @@
-.container{
-    background-color: rgb(54, 51, 51);
+@font-face {
+    font-family: 'Vitro_core';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Vitro_core.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+h1 {
+  border-right: solid 3px rgba(63, 67, 68, 0.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Vitro_core', monospace;  
+  font-size: 35px;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 0 auto;
+}
+
+/* Animation */
+h1 {
+  animation: animated-text 4s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 472px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(255, 255, 255, 0.75);}
+  to{border-right-color: transparent;}
+}
+
+
+body {
+    background: linear-gradient(to right, rgb(146, 137, 137) 5%, rgb(173, 121, 221)) ;
+    font-family: 'Vitro_core';
 }
 
 
