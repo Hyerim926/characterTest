@@ -39,7 +39,7 @@ h1 {
 
 
 body {
-    background: linear-gradient(to right, rgb(146, 137, 137) 5%, rgb(173, 121, 221)) ;
+    background: linear-gradient(to right, #ae5ea0, #0ed5ae) ;
     font-family: 'Vitro_core';
 }
 
