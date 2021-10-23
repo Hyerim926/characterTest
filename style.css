@@ -19,15 +19,15 @@ h1 {
 
 /* Animation */
 h1 {
-  animation: animated-text 4s steps(29,end) 1s 1 normal both,
-             animated-cursor 600ms steps(29,end) infinite;
+  animation: animated-text 6s steps(32,end) 1s 1 normal both,
+             animated-cursor 600ms steps(32,end) infinite;
 }
 
 /* text animation */
 
 @keyframes animated-text{
   from{width: 0;}
-  to{width: 472px;}
+  to{width: 520px;}
 }
 
 /* cursor animations */
