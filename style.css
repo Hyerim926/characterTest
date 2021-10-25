@@ -27,7 +27,7 @@ h1 {
 
 @keyframes animated-text{
   from{width: 0;}
-  to{width: 520px;}
+  to{width: 380px;}
 }
 
 /* cursor animations */
@@ -39,10 +39,19 @@ h1 {
 
 
 body {
-    background: linear-gradient(to right, #ae5ea0, #0ed5ae) ;
+    background: linear-gradient(to right, #0ed5ae, #ae5ea0) ;
     font-family: 'Vitro_core';
 }
 
+.me{
+  font-size: 11px;
+  text-align: center;
+}
+
+.caution{
+  font-size: 15px;
+  text-align: center;
+}
 
 article {
     display: flex;
