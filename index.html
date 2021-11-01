@@ -31,7 +31,7 @@
     </article>
     <article class="result">
         <img id="img" class="rounded-circle mt-5" src="lion.jpg" alt="animal">
-        <h2 id="char" class="text-center mt-5">역할</h2>
+        <h2 id="char" class="text-center mt-5"></h2>
         <h3 id="explain" class="text-center mt-5">설명</h3>
         <!-- Go to www.addthis.com/dashboard to customize your tools -->
         <div class="share addthis_inline_share_toolbox"></div>
@@ -57,12 +57,12 @@
     <script>
         var num = 1;
         var q = {
-            1: { "title": "어느 날, 낮잠을 자던 당신은 꿈 속에서 황폐한 광야에 서있는데..", "type": "EI", "A": "", "B": "I" },
-            2: { "title": "문제 2번", "type": "EI", "A": "E", "B": "I" },
-            3: { "title": "문제 3번", "type": "EI", "A": "E", "B": "I" },
-            4: { "title": "문제 4번", "type": "EI", "A": "E", "B": "I" },
-            5: { "title": "문제 5번", "type": "SN", "A": "S", "B": "N" },
-            6: { "title": "문제 6번", "type": "SN", "A": "S", "B": "N" },
+            1: { "title": "원격 수업을 듣다가 갑자기 서버가 끊겨 수업을 듣지 못하게 되었다.", "type": "EI", "A": "오예 피곤했는데 잘 됐다. 좀 쉬어야지..", "B": "멍 때리며 서버가 복구될 때까지 기다린다." },
+            2: { "title": "서버가 다시 연결되고 그 이유를 들어보니 생전 듣도보도 못한 SYNK가 일시적으로 꺼졌다고 한다.", "type": "EI", "A": "엥? SYNK가 뭔데하며 더 찾아본다.", "B": "이유따위는 관심 없다. 수업이나 열심히 듣는다." },
+            3: { "title": "수업을 듣던 중, 옆에서 갑자기 누군가가 말을 건다. '안녕 난 너의 AE야!'", "type": "EI", "A": "AE에 대해 궁금해하며 대화를 이어나간다.", "B": "피곤해서 환각을 경험한 거라고 생각하며 수업에 집중한다." },
+            4: { "title": "교수님이 주말동안 할 팀플 과제를 내주셨다. 팀 내 나의 역할은?", "type": "EI", "A": "팀을 이끄는 리더", "B": "팀을 더 탄탄하게 만들어주는 조력자" },
+            5: { "title": "드디어 주말이다. 과제가 하나 있긴 하지만 주말이니까 낮잠을 자는데 꿈에서 황폐한 대지 위에 있는 나를 발견한다.", "type": "SN", "A": "아무것도 없네.. 뭐하는 곳이지?", "B": "와 되게 넓다! 이런 곳이 처음인데.." },
+            6: { "title": "", "type": "SN", "A": "일단 궁금하니까 가까이 가본다.", "B": "" },
             7: { "title": "문제 7번", "type": "SN", "A": "S", "B": "N" },
             8: { "title": "문제 8번", "type": "SN", "A": "S", "B": "N" },
             9: { "title": "문제 9번", "type": "TF", "A": "T", "B": "F" },
@@ -71,14 +71,14 @@
             12: { "title": "문제 12번", "type": "TF", "A": "T", "B": "F" }
         }
         var result = {
-            "EST": { "char": "카리나", "explain": "카리나 설명", "img": "lion.jpg" },
-            "INF": { "char": "윈터", "explain": "윈터 설명", "img": "lion.jpg" },
-            "ENF": { "char": "닝닝", "explain": "닝닝 설명", "img": "lion.jpg" },
-            "IST": { "char": "지젤", "explain": "지젤 설명", "img": "lion.jpg" },
-            "ENT": { "char": "나비스", "explain": "나비스 설명", "img": "lion.jpg" },
-            "ISF": { "char": "블랙맘바", "explain": "블랙맘바 설명", "img": "lion.jpg" },
-            "ESF": { "char": "나비스", "explain": "나비스 설명", "img": "lion.jpg" },
-            "INT": { "char": "블랙맘바", "explain": "블랙맘바 설명", "img": "lion.jpg" },
+            "EST": { "char": "윈터", "explain": "&#x2B50 윈터 Armamenter &#x2B50", "img": "lion.jpg" },
+            "INF": { "char": "닝닝", "explain": "&#x1F98B 닝닝 Ed Hacker &#x1F98B", "img": "lion.jpg" },
+            "ENF": { "char": "카리나", "explain": "&#x1F49C 카리나 Rocket Puncher &#x1F49C", "img": "lion.jpg" },
+            "IST": { "char": "블랙맘바", "explain": "&#x1F40D 모든 걸 삼켜버릴 블랙맘바 &#x1F40D", "img": "lion.jpg" },
+            "ENT": { "char": "나비스", "explain": "&#x1F984 Nævis, We love you. &#x1F984", "img": "lion.jpg" },
+            "ISF": { "char": "나비스", "explain": "&#x1F984 Nævis, We love you. &#x1F984", "img": "lion.jpg" },
+            "ESF": { "char": "지젤", "explain": "&#x1F319 지젤 got Xenoglossy &#x1F319", "img": "lion.jpg" },
+            "INT": { "char": "블랙맘바", "explain": "&#x1F40D 모든 걸 삼켜버릴 블랙맘바 &#x1F40D", "img": "lion.jpg" },
             // "ESTP": {"crew": "COCANBUTTUR", "explain": "악어 설명", "img": "lion.jpg"},
             // "ISTP": {"crew": "COCANBUTTUR", "explain": "미어캣 설명", "img": "lion.jpg"},
             // "ENFJ": {"crew": "WANT", "explain": "멋쟁이 사자 설명", "img": "lion.jpg"},
