@@ -20,8 +20,8 @@ h1 {
 
 /* Animation */
 h1 {
-  animation: animated-text 5s steps(30, end) 1s 1 normal both,
-    animated-cursor 600ms steps(28, end) infinite;
+  animation: animated-text 5s steps(26, end) 1s 1 normal both,
+    animated-cursor 600ms steps(26, end) infinite;
 }
 
 /* text animation */
@@ -31,7 +31,7 @@ h1 {
     width: 0;
   }
   to {
-    width: 378px;
+    width: 370px;
   }
 }
 
@@ -57,6 +57,14 @@ body {
   text-align: center;
 }
 
+#me {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#me:hover {
+  text-decoration: none;
+}
+
 .caution {
   font-size: 15px;
   text-align: center;
@@ -65,6 +73,20 @@ body {
 article {
   display: flex;
   flex-direction: column;
+}
+
+.progress-bar {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  height: 200%;
+}
+
+.progress {
+  background-color: #ffffff00;
+  /* -webkit-box-shadow: none; */
+  /* box-shadow: none; */
+  border: 1px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.7) !important;
 }
 
 .question {
