@@ -14,7 +14,7 @@
 <body class="container">
     <article class="start">
         <h1 class="mt-5 text-center">æspa 세계관 속 나는?</h1> <br>
-        <img src="">
+        <img class="mt-3" id="main" src="images/group.jpg">
         <button type="button" class="btn btn-outline-light mt-5" onclick='start();'>나와 꼭 맞는 캐릭터 알아보러 GO!</button>
         <br><br>
         <h5 class="caution">※ 주의 ※ <br> 본 테스트는 주관적인 해석에 따라 구성한 것으로, 재미로만 봐주세요!</h5>
@@ -24,19 +24,20 @@
         <div class="progress mt-5">
             <div class="progress-bar" role="progressbar" style="width: calc(100/12*1%)"></div>
         </div>
-        <h2 id="title" class="text-center mt-5">문제</h2> <br>
+        <h4 id="title" class="text-center mt-5">문제</h4> <br>
         <input id="type" type="hidden" value="EI">
-        <button id="A" type="button" class="btn btn-outline-light">Primary</button> <br>
-        <button id="B" type="button" class="btn btn-outline-light">Primary</button>
+        <button id="A" type="button" class="btn btn-outline-light mt-3">Primary</button> <br>
+        <button id="B" type="button" class="btn btn-outline-light mt-1">Primary</button>
     </article>
     <article class="result">
-        <img id="img" class="rounded-circle mt-5" src="lion.jpg" alt="animal">
-        <h2 id="char" class="text-center mt-5"></h2>
-        <h4 id="explain" class="text-center mt-5">설명</h4>
+        <h2 class="mt-5">에스파 세계관 속 당신은!</h2>
+        <img id="img" class="mt-3" src="lion.jpg" alt="character">
+        <h2 id="char" class="text-center"></h2>
+        <h4 id="explain" class="text-center mt-3">설명</h4>
         <!-- Go to www.addthis.com/dashboard to customize your tools -->
-        <div class="share addthis_inline_share_toolbox"></div>
-        <h5 class="text-center mt-5">Savage 뮤비 보러가기</h5>
-        <a id="media" href="https://youtu.be/WPdWvnAAurg" target="_blank"><img src="https://i.ytimg.com/vi/WPdWvnAAurg/original.jpg" alt="썸네일"></a>
+        <div class="share addthis_inline_share_toolbox mt-3"></div>
+        <h5 class="text-center mt-3">에스파 &#x1F389데뷔 1주년&#x1F389 기념 <br> &#x2B07움직이는 에스파 보러가기&#x2B07	</h5>
+        <a id="media" href="https://www.youtube.com/channel/UC9GtSLeksfK4yuJ_g1lgQbg" target="_blank"><img class="channel" src="https://yt3.ggpht.com/aEUDLcPLfFe7EVpgooVW8z96Y8q2C8P18ypx2BZw3f3_b6hZqOQv2f_ifzMr2iQHdrjThvih=s176-c-k-c0x00ffffff-no-rj" alt="썸네일"></a>
         <a id="media" class="text-center mt-3 goods" href="https://smtownandstore.com/product/celeb_aespa.html?cate_no=1132"><h5>에스파 new! 굿즈 구매하기</h5></a>
     </article>
     <article class="kakao_ad mt-5">
@@ -74,14 +75,14 @@
             12: { "title": "문제 12번", "type": "TF", "A": "T", "B": "F" }
         }
         var result = {
-            "EST": { "char": "윈터", "explain": "&#x2B50 윈터 Armamenter &#x2B50", "img": "lion.jpg" },
-            "INF": { "char": "닝닝", "explain": "&#x1F98B 닝닝 Ed Hacker &#x1F98B", "img": "lion.jpg" },
-            "ENF": { "char": "카리나", "explain": "&#x1F49C 카리나 Rocket Puncher &#x1F49C", "img": "lion.jpg" },
-            "IST": { "char": "블랙맘바", "explain": "&#x1F40D 모든 걸 삼켜버릴 블랙맘바 &#x1F40D", "img": "lion.jpg" },
-            "ENT": { "char": "나비스", "explain": "&#x1F984 Nævis, We love you. &#x1F984", "img": "lion.jpg" },
-            "ISF": { "char": "나비스", "explain": "&#x1F984 Nævis, We love you. &#x1F984", "img": "lion.jpg" },
-            "ESF": { "char": "지젤", "explain": "&#x1F319 지젤 got Xenoglossy &#x1F319", "img": "lion.jpg" },
-            "INT": { "char": "블랙맘바", "explain": "&#x1F40D 모든 걸 삼켜버릴 블랙맘바 &#x1F40D", "img": "lion.jpg" },
+            "EST": { "char": "윈터", "explain": "&#x2B50 윈터 Armamenter &#x2B50", "img": "images/winter.jpg" },
+            "INF": { "char": "닝닝", "explain": "&#x1F98B 닝닝 Ed Hacker &#x1F98B", "img": "images/ningning.jpg" },
+            "ENF": { "char": "카리나", "explain": "&#x1F49C 카리나 Rocket Puncher &#x1F49C", "img": "images/karina.jpg" },
+            "IST": { "char": "블랙맘바", "explain": "&#x1F40D 모든 걸 삼켜버릴 블랙맘바 &#x1F40D", "img": "images/blackmamba.jpg" },
+            "ENT": { "char": "나비스", "explain": "&#x1F984 Nævis, We love you. &#x1F984", "img": "images/blackmamba.jpg" },
+            "ISF": { "char": "나비스", "explain": "&#x1F984 Nævis, We love you. &#x1F984", "img": "images/naevis.jpg" },
+            "ESF": { "char": "지젤", "explain": "&#x1F319 지젤 got Xenoglossy &#x1F319", "img": "images/giselle.jpg" },
+            "INT": { "char": "블랙맘바", "explain": "&#x1F40D 모든 걸 삼켜버릴 블랙맘바 &#x1F40D", "img": "images/blackmamba.jpg" },
             // "ESTP": {"crew": "COCANBUTTUR", "explain": "악어 설명", "img": "lion.jpg"},
             // "ISTP": {"crew": "COCANBUTTUR", "explain": "미어캣 설명", "img": "lion.jpg"},
             // "ENFJ": {"crew": "WANT", "explain": "멋쟁이 사자 설명", "img": "lion.jpg"},
