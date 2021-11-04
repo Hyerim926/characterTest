@@ -10,6 +10,9 @@
 
 .container {
   width: 400px;
+  background: linear-gradient(to right, #0ed5ae, #ae5ea0);
+  font-family: "Vitro_core";
+  text-align: center;
 }
 
 h1 {
@@ -48,12 +51,6 @@ h1 {
   to {
     border-right-color: transparent;
   }
-}
-
-body {
-  background: linear-gradient(to right, #0ed5ae, #ae5ea0);
-  font-family: "Vitro_core";
-  text-align: center;
 }
 
 .custom {
