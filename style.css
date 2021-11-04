@@ -52,11 +52,6 @@ body {
   text-align: center;
 }
 
-.custom {
-  width: 350px;
-  display: inline-block !important;
-}
-
 #text {
   display: inline-block;
 }
