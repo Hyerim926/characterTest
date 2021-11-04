@@ -21,7 +21,7 @@ h1 {
 /* Animation */
 h1 {
   animation: animated-text 5s steps(26, end) 1s 1 normal both,
-    animated-cursor 600ms steps(26, end) infinite;
+    animated-cursor 800ms steps(26, end) infinite;
 }
 
 /* text animation */
@@ -31,7 +31,7 @@ h1 {
     width: 0;
   }
   to {
-    width: 370px;
+    width: 358px;
   }
 }
 
@@ -75,7 +75,7 @@ body {
 }
 
 .caution {
-  font-size: 15px;
+  font-size: 13px;
   text-align: center;
 }
 
