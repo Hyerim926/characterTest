@@ -8,14 +8,6 @@
 
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
 
-.container {
-  width: 378px;
-  background: linear-gradient(to right, #0ed5ae, #ae5ea0);
-  font-family: "Vitro_core";
-  /* text-align: center; */
-  /* display: inline-block; */
-}
-
 h1 {
   border-right: solid 3px rgba(63, 67, 68, 0.75);
   white-space: nowrap;
@@ -52,6 +44,12 @@ h1 {
   to {
     border-right-color: transparent;
   }
+}
+
+body {
+  background: linear-gradient(to right, #0ed5ae, #ae5ea0);
+  font-family: "Vitro_core";
+  text-align: center;
 }
 
 .custom {
