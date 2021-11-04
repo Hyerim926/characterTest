@@ -12,7 +12,8 @@
   width: 378px;
   background: linear-gradient(to right, #0ed5ae, #ae5ea0);
   font-family: "Vitro_core";
-  text-align: center;
+  /* text-align: center; */
+  /* display: inline-block; */
 }
 
 h1 {
