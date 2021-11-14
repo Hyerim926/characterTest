@@ -8,4 +8,4 @@ KPOP 씬의 슈퍼루키 에스파 AESPA의 세계관을 주제로 한 토이프
 
 검색 최적화 : 네이버 서치어드바이저와 구글 서치 콘솔 활용 (진행 중)
 
-↗ [Go TEST!](https://aespatest.netlify.app/)
+↗ [Go TEST!](https://aespatest.netlify.app/){: target="_blank"}
